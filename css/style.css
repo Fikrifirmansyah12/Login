@@ -1,0 +1,153 @@
+/* Resetting default styles and setting font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins, bold;
+}
+
+/* Setting background and height for the body */
+body {
+  min-height: 100vh;
+  background-image: radial-gradient(
+    circle,
+    #cdf9ff,
+    #c9f6ff,
+    #c5f4ff,
+    #c2f1ff,
+    #bfeeff,
+    #b7eeff,
+    #aeeeff,
+    #a5eeff,
+    #93f2ff,
+    #81f5fd,
+    #6ff8f9,
+    #5ffbf1
+  );
+}
+
+/* Styling for the side bar */
+.side-bar {
+  background: #f6f4eb;
+  width: 290px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  overflow-y: auto;
+  transition: 0.6s ease;
+  transition-property: left;
+}
+
+/* Showing the side bar by setting left to 0 */
+.side-bar.active {
+  left: 0;
+}
+
+/* Styling for the menu items */
+.side-bar .menu {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.side-bar .menu .item a {
+  color: #03001c;
+  font-size: 20px;
+  text-decoration: none;
+  display: block;
+  padding: 5px 30px;
+  line-height: 60px;
+}
+
+/* Hover effect for the menu items */
+.side-bar .menu .item a:hover {
+  background: #19b7a5;
+  transition: 0.5s ease;
+}
+
+/* Styling for the dropdown icon */
+.side-bar .menu .item i {
+  margin-right: 10px;
+}
+
+/* Styling for the sub-menu dropdown */
+.side-bar .menu .item a .dropdown {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  transition: 0.3s ease;
+}
+
+/* Styling for the sub-menu items */
+.side-bar .menu .item .sub-menu {
+  background: none;
+  display: none;
+}
+
+.side-bar .menu .item .sub-menu a {
+  padding-left: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-family: bold;
+}
+
+/* Styling for the rotation animation */
+.side-bar .menu .item .rotate {
+  transform: rotate(90deg);
+}
+
+/* Styling for the close button */
+.close-btn {
+  position: absolute;
+  color: #2e0109;
+  font-size: 28px;
+  right: 0;
+  margin: 25px;
+  cursor: pointer;
+}
+
+/* Styling for the menu button */
+.menu-btn {
+  position: absolute;
+  color: #2e0109;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  padding: 15px;
+  width: 100%;
+  height: 60px;
+  background: #f6f4eb;
+}
+
+.btn-menu {
+  display: flex;
+  padding-left: 10px;
+  align-items: center;
+}
+
+.navigasi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navigasi > li {
+  list-style-type: none;
+  padding: 12px;
+}
+
+.navigasi > li > a {
+  color: #2e0109;
+  font-size: 18px;
+  text-decoration: none;
+}
+.navigasi > li:hover {
+  background: #19b7a5;
+  transition: all 0.5s ease-in-out;
+  border-radius: 10px;
+}
